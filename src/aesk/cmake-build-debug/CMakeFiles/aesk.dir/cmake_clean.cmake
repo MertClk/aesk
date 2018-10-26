@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/aesk.dir/src/main.cpp.o"
+  "CMakeFiles/aesk.dir/src/Aesk.cpp.o"
+  "CMakeFiles/aesk.dir/src/PclStuff.cpp.o"
   "devel/lib/aesk/aesk.pdb"
   "devel/lib/aesk/aesk"
 )

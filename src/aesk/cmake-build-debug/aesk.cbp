@@ -1234,6 +1234,12 @@
          </MakeCommands>
       </Target>
       </Build>
+      <Unit filename="/home/mert/projects/aesk/src/aesk/src/Aesk.cpp">
+         <Option target="aesk"/>
+      </Unit>
+      <Unit filename="/home/mert/projects/aesk/src/aesk/src/PclStuff.cpp">
+         <Option target="aesk"/>
+      </Unit>
       <Unit filename="/home/mert/projects/aesk/src/aesk/src/main.cpp">
          <Option target="aesk"/>
       </Unit>

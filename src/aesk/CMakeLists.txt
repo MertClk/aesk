@@ -66,7 +66,9 @@ link_directories(
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
 
 add_executable(aesk
-        src/main.cpp)
+        src/main.cpp
+        src/Aesk.cpp
+        src/PclStuff.cpp)
 
 target_link_libraries(aesk
         ${Boost_LIBRARIES}

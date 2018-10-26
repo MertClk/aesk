@@ -1023,6 +1023,60 @@ gtest_main/fast:
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest_main.dir/build.make gtest/gtest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+src/Aesk.o: src/Aesk.cpp.o
+
+.PHONY : src/Aesk.o
+
+# target to build an object file
+src/Aesk.cpp.o:
+	$(MAKE) -f CMakeFiles/aesk.dir/build.make CMakeFiles/aesk.dir/src/Aesk.cpp.o
+.PHONY : src/Aesk.cpp.o
+
+src/Aesk.i: src/Aesk.cpp.i
+
+.PHONY : src/Aesk.i
+
+# target to preprocess a source file
+src/Aesk.cpp.i:
+	$(MAKE) -f CMakeFiles/aesk.dir/build.make CMakeFiles/aesk.dir/src/Aesk.cpp.i
+.PHONY : src/Aesk.cpp.i
+
+src/Aesk.s: src/Aesk.cpp.s
+
+.PHONY : src/Aesk.s
+
+# target to generate assembly for a file
+src/Aesk.cpp.s:
+	$(MAKE) -f CMakeFiles/aesk.dir/build.make CMakeFiles/aesk.dir/src/Aesk.cpp.s
+.PHONY : src/Aesk.cpp.s
+
+src/PclStuff.o: src/PclStuff.cpp.o
+
+.PHONY : src/PclStuff.o
+
+# target to build an object file
+src/PclStuff.cpp.o:
+	$(MAKE) -f CMakeFiles/aesk.dir/build.make CMakeFiles/aesk.dir/src/PclStuff.cpp.o
+.PHONY : src/PclStuff.cpp.o
+
+src/PclStuff.i: src/PclStuff.cpp.i
+
+.PHONY : src/PclStuff.i
+
+# target to preprocess a source file
+src/PclStuff.cpp.i:
+	$(MAKE) -f CMakeFiles/aesk.dir/build.make CMakeFiles/aesk.dir/src/PclStuff.cpp.i
+.PHONY : src/PclStuff.cpp.i
+
+src/PclStuff.s: src/PclStuff.cpp.s
+
+.PHONY : src/PclStuff.s
+
+# target to generate assembly for a file
+src/PclStuff.cpp.s:
+	$(MAKE) -f CMakeFiles/aesk.dir/build.make CMakeFiles/aesk.dir/src/PclStuff.cpp.s
+.PHONY : src/PclStuff.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -1129,6 +1183,12 @@ help:
 	@echo "... gmock"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... src/Aesk.o"
+	@echo "... src/Aesk.i"
+	@echo "... src/Aesk.s"
+	@echo "... src/PclStuff.o"
+	@echo "... src/PclStuff.i"
+	@echo "... src/PclStuff.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
