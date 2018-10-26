@@ -6,7 +6,7 @@ int main(int argc, char **argv){
   std::cout << std::fixed;
   std::cout << std::setprecision(10);
 
-  ros::init(argc, argv, "navi_node");
+  ros::init(argc, argv, "aesk_node");
   ros::NodeHandle nh;
 
 //  ToDo create your object here
