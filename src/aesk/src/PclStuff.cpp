@@ -1,4 +1,4 @@
-#include "PclStuff.h"
+#include "aesk/PclStuff.h"
 
 using Point = pcl::PointXYZI;
 using Cloud = pcl::PointCloud<pcl::PointXYZI>;
@@ -6,6 +6,8 @@ using Cloud = pcl::PointCloud<pcl::PointXYZI>;
 
 Cloud::Ptr PclStuff::Downsample(const Cloud::ConstPtr &cloud_in,
                                 float leaf_size) {
+//For more information please check http://pointclouds.org/documentation/tutorials/voxel_grid.php
+//This function removes points in a cube described by the leaf_size except one
   Cloud::Ptr cloud_result(new Cloud());
 
   pcl::VoxelGrid<Point> grid;
@@ -18,6 +20,8 @@ Cloud::Ptr PclStuff::Downsample(const Cloud::ConstPtr &cloud_in,
 
 Cloud::Ptr
 PclStuff::GroundRemover(Cloud::ConstPtr cloud_in, float treshold) {
+  //For more information please check http://pointclouds.org/documentation/tutorials/random_sample_consensus.php
+// This function removes ground points by using RANSAC algorithm
   Cloud::Ptr cloud_groundless(new Cloud);
 
   pcl::SACSegmentation<Point> seg;
@@ -53,6 +57,9 @@ PclStuff::MiniClusterer(Cloud::Ptr cloud_in,
                         float tolerance, int points_min, int points_max,
                         float x_max, float y_max, float z_max,
                         float x_min, float y_min, float z_min) {
+//  For more information please check http://pointclouds.org/documentation/tutorials/cluster_extraction.php
+// This function outputs clusters in desired sizes
+// tolerance : max. distance between points in the cluster
   pcl::search::KdTree<Point>::Ptr tree(new pcl::search::KdTree<Point>);
   tree->setInputCloud(cloud_in);
 

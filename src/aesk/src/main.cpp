@@ -1,5 +1,6 @@
 #include <iostream>
 #include <ros/ros.h>
+#include "aesk/Aesk.h"
 
 int main(int argc, char **argv){
 
@@ -10,7 +11,8 @@ int main(int argc, char **argv){
   ros::NodeHandle nh;
 
 //  ToDo create your object here
-
+  Aesk aesk(nh);
+  aesk.Start();
 
   ros::spin();
 }
